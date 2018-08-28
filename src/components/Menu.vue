@@ -39,7 +39,8 @@ export default {
       items: [
         { title: "Dashboard", icon: "dashboard", route: "/" },
         { title: "Pacientes", icon: "people", route: "/pacientes" },
-        { title: "Visualizador", icon: "insert_photo", route: "/visualizador" }
+        { title: "Visualizador", icon: "insert_photo", route: "/visualizador" },
+        { title: "Reference Lines", icon: "insert_photo", route: "/reference" }
       ],
       mini: true,
       drawer: false

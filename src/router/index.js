@@ -6,6 +6,7 @@ import Vuelidate from "vuelidate";
 import Dashboard from "@/pages/Dashboard";
 import ListaPacientes from "@/pages/ListaPacientes";
 import ImageLoader from "@/pages/ImageLoader";
+import ReferenceLines from "@/pages/ReferenceLines";
 
 Vue.use(Vuelidate);
 Vue.use(Vuetify);
@@ -50,6 +51,12 @@ export default new Router({
       name: "Exame",
       component: ImageLoader,
       props: true
+    },
+
+    {
+      path: "/reference",
+      name: "Reference Tool",
+      component: ReferenceLines
     }
   ]
 });

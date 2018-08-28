@@ -121,10 +121,6 @@ export default {
       }
     },
 
-    imageTools() {
-      const element = this.$refs.dicomImage;
-    },
-
     wwwcTool() {
       this.disactiveAllTools();
       const element = this.$refs.dicomImage;

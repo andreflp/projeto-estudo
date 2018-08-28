@@ -7,13 +7,16 @@ export default {
   mounted() {
     numeral.locale("pt-br");
   },
+
   filters: {
+    // PHONE
     phone(phone) {
       var formatter = new StringMask("(00) 00000-0000");
       var result = formatter.apply(phone);
       return result;
     },
 
+    // CPF
     cpf(cpf) {
       var formatter = new StringMask("000.000.000-00");
       var result = formatter.apply(cpf);

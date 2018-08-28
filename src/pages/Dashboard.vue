@@ -18,15 +18,16 @@
         <v-card-title>
           <div>
             <h3>PACIENTES</h3><br>
-            <span><h3>Quantidade de pacientes cadastrados: {{ quantidadePacientes }}</h3></span>
+            <span>
+              <h3>Quantidade de pacientes cadastrados: {{ quantidadePacientes }}</h3>
+            </span>
             <span><h3><br></h3></span>
           </div>
-
         </v-card-title>
       </v-card>
     </v-flex>  
-    
-    <v-flex xs6 sm6 style="margin-left: 15px;">
+  
+    <v-flex xs6 sm6 style="margin-left: 20px;">
       <v-card>
         <v-card-media
           class="white--text"

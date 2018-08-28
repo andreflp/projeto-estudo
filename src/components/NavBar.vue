@@ -10,10 +10,9 @@
         :to="'/cadastro'"
         icon
         slot="activator"
-        color="primary"
-        dark
+        color="white"
       >
-        <v-icon>person_add</v-icon>
+        <v-icon color="primary">person_add</v-icon>
       </v-btn>
       <span>Novo Paciente</span>
     </v-tooltip>
