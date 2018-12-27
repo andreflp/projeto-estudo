@@ -41,6 +41,11 @@
               <span>Elliptical Roi</span>
               <v-icon>radio_button_unchecked</v-icon>
             </v-btn>
+
+            <v-btn flat @click="clearChanges()">
+              <span>Clear</span>
+              <v-icon>clear</v-icon>
+            </v-btn>
           </v-btn-toggle>
         </v-flex>
       </v-layout>
@@ -165,6 +170,18 @@ export default {
       cornerstoneTools.zoomTouchDrag.deactivate(element);
       cornerstoneTools.panTouchDrag.deactivate(element);
       cornerstoneTools.stackScrollTouchDrag.deactivate(element);
+    },
+
+    clearChanges() {
+      const element = this.$refs.dicomImage;
+      var toolStateManager =
+        cornerstoneTools.globalImageIdSpecificToolStateManager;
+
+      toolStateManager.clear(element);
+      cornerstoneTools.referenceLines.tool.disable(element);
+
+      cornerstone.reset(element);
+      cornerstone.updateImage(element);
     }
   }
 };

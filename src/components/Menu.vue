@@ -4,7 +4,7 @@
       <v-list>
         <v-list-tile>
           <v-list-tile-title class="title">
-          Projeto Teste
+          Projeto Viewer
           </v-list-tile-title>
         </v-list-tile>
       </v-list>
